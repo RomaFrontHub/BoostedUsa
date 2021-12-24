@@ -1,0 +1,116 @@
+@media (max-width: 1720px) {
+  .top_menu {
+    nav {
+      ul {
+        display: flex;;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        li {
+          padding-right: 0;
+          display: block;
+     padding: 5px 0;
+          a {
+color: #fff;
+
+&:hover {
+  text-decoration: underline;
+}
+          }
+        }
+      }
+    }
+  }
+  
+    header nav {
+      -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      display: none;
+      position: fixed;
+      top: 0;
+   background: #19273a;
+      left: 0;
+      height:  100%;
+      z-index: 33;
+      width: 100%;
+      right: 0;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      opacity: 0;
+    
+    
+    
+    
+    }
+  
+    header.open_menu nav {
+      right: 0;
+      display: block;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      opacity: 1;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; }
+    header .toggle_mobile_btn {
+ 
+      display: block;
+      width: 33px;
+      background-color: transparent;
+  
+      position: relative;
+      cursor: pointer;
+      height: 20px;
+      z-index: 44; }
+    header .toggle_mobile_btn.on span:first-child {
+      background-color: transparent; }
+    header .toggle_mobile_btn.on span:nth-child(2) {
+      -webkit-transform: rotate(45deg) translate(-1px, 0);
+      -ms-transform: rotate(45deg) translate(-1px, 0);
+      transform: rotate(45deg) translate(-1px, 0);
+      width: -webkit-calc(100% - 3px);
+      width: calc(100% - 3px);
+      background: #fff; }
+    header .toggle_mobile_btn.on span:last-child {
+      -webkit-transform: rotate(-45deg) translate(6px, -7px);
+      -ms-transform: rotate(-45deg) translate(6px, -7px);
+      transform: rotate(-45deg) translate(6px, -7px);
+      width: -webkit-calc(100% - 3px);
+      width: calc(100% - 3px);
+      background: #fff; }
+    header .toggle_mobile_btn.on span:after {
+      opacity: 0;
+      height: 0; }
+    header .toggle_mobile_btn span {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: -webkit-calc(100% - 8px);
+      width: calc(100% - 8px);
+      height: 3px;
+      background-color: #19273a;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    header .toggle_mobile_btn span:first-child {
+      top: 0; }
+    header .toggle_mobile_btn span:last-child {
+      top: 16px;
+      position: relative;
+      display: block; }
+    header .toggle_mobile_btn span:after {
+      content: "";
+      height: 3px;
+      background-color: #19273a;
+      position: absolute;
+      right: -5px;
+      width: 5px;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; } }
+  
